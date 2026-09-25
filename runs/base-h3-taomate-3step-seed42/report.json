@@ -1,0 +1,587 @@
+{
+  "status": "complete",
+  "runs": [
+    {
+      "phase": "warmup",
+      "generation_seconds": 87.01068655587733,
+      "components_seconds": {
+        "node/VAELoader": 0.13107510190457106,
+        "node/CLIPLoader": 0.5239082630723715,
+        "text_tokenization": 0.001390606164932251,
+        "text_encoder": 4.538567965850234,
+        "node/MiniMaxH3ImageToVideo": 4.541348365833983,
+        "node/UNETLoader": 0.03382428805343807,
+        "node/LoraLoaderModelOnly": 0.016388148069381714,
+        "node/MiniMaxH3SigmaShift": 0.0002092940267175436,
+        "node/BenchmarkSage": 3.81020363420248e-05,
+        "node/BasicScheduler": 8.498015813529491e-05,
+        "node/KSamplerSelect": 1.1721858754754066e-05,
+        "node/BasicGuider": 1.8354039639234543e-05,
+        "node/RandomNoise": 6.2820035964250565e-06,
+        "denoising_loop": 51.399000321980566,
+        "node/SamplerCustomAdvanced": 52.03755783685483,
+        "node/VAEDecodeAudio": 0.2670824930537492,
+        "node/VAEDecode": 25.098425118951127,
+        "node/CreateVideo": 4.351208917796612e-05,
+        "node/SaveVideo": 3.1339962298516184
+      },
+      "calls": [
+        {
+          "component": "node/VAELoader",
+          "seconds": 0.028223251923918724
+        },
+        {
+          "component": "node/VAELoader",
+          "seconds": 0.10285184998065233
+        },
+        {
+          "component": "node/CLIPLoader",
+          "seconds": 0.5239082630723715
+        },
+        {
+          "component": "text_tokenization",
+          "seconds": 0.001390606164932251
+        },
+        {
+          "component": "text_encoder",
+          "seconds": 4.538567965850234
+        },
+        {
+          "component": "node/MiniMaxH3ImageToVideo",
+          "seconds": 4.541348365833983
+        },
+        {
+          "component": "node/UNETLoader",
+          "seconds": 0.03382428805343807
+        },
+        {
+          "component": "node/LoraLoaderModelOnly",
+          "seconds": 0.016388148069381714
+        },
+        {
+          "component": "node/MiniMaxH3SigmaShift",
+          "seconds": 0.0002092940267175436
+        },
+        {
+          "component": "node/BenchmarkSage",
+          "seconds": 3.81020363420248e-05
+        },
+        {
+          "component": "node/BasicScheduler",
+          "seconds": 8.498015813529491e-05
+        },
+        {
+          "component": "node/KSamplerSelect",
+          "seconds": 1.1721858754754066e-05
+        },
+        {
+          "component": "node/BasicGuider",
+          "seconds": 1.8354039639234543e-05
+        },
+        {
+          "component": "node/RandomNoise",
+          "seconds": 6.2820035964250565e-06
+        },
+        {
+          "component": "denoising_loop",
+          "seconds": 51.399000321980566
+        },
+        {
+          "component": "node/SamplerCustomAdvanced",
+          "seconds": 52.03755783685483
+        },
+        {
+          "component": "node/VAEDecodeAudio",
+          "seconds": 0.2670824930537492
+        },
+        {
+          "component": "node/VAEDecode",
+          "seconds": 25.098425118951127
+        },
+        {
+          "component": "node/CreateVideo",
+          "seconds": 4.351208917796612e-05
+        },
+        {
+          "component": "node/SaveVideo",
+          "seconds": 3.1339962298516184
+        }
+      ],
+      "forward_counts": {
+        "transformer_forwards": 3,
+        "sage_dispatches": 150,
+        "sage_attempts": 150,
+        "sage_qk_int8_pv_fp8_cuda_completed": 150,
+        "sage_completed": 150
+      },
+      "peak_allocated_gib": 9.163675785064697,
+      "peak_reserved_gib": 13.720703125,
+      "sampled_peak_device_memory_mib": 31844,
+      "video": "/home/raqeeb/code/h3-optimization/taomate-lora/runs/base-h3-taomate-3step-seed42/runtime/output/warmup/podcast_00001_.mp4",
+      "ffprobe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 736,
+            "height": 1280,
+            "coded_width": 736,
+            "coded_height": 1280,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 32,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "iec61966-2-1",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 124416,
+            "duration": "10.125000",
+            "bit_rate": "2454656",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "243",
+            "extradata_size": 48,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "32000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/32000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 324000,
+            "duration": "10.125000",
+            "bit_rate": "135532",
+            "nb_frames": "318",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/home/raqeeb/code/h3-optimization/taomate-lora/runs/base-h3-taomate-3step-seed42/runtime/output/warmup/podcast_00001_.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "10.125000",
+          "size": "3292273",
+          "bit_rate": "2601302",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "prompt": "{\"diffusion\": {\"class_type\": \"UNETLoader\", \"inputs\": {\"unet_name\": \"minimax_h3_fl2va_int8_convrot.safetensors\", \"weight_dtype\": \"default\"}}, \"text\": {\"class_type\": \"CLIPLoader\", \"inputs\": {\"clip_name\": \"qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\", \"type\": \"minimax\", \"device\": \"default\"}}, \"video_vae\": {\"class_type\": \"VAELoader\", \"inputs\": {\"vae_name\": \"minimax_h3_video_vae_fp16.safetensors\"}}, \"audio_vae\": {\"class_type\": \"VAELoader\", \"inputs\": {\"vae_name\": \"minimax_h3_audio_vae_fp32.safetensors\"}}, \"conditioning\": {\"class_type\": \"MiniMaxH3ImageToVideo\", \"inputs\": {\"clip\": [\"text\", 0], \"vae\": [\"video_vae\", 0], \"prompt\": \"integrated_multimodal_description: A polished vertical social-media podcast advertisement in a warm modern studio with wooden shelves, soft amber practical lights, two beige lounge chairs, and bright pink broadcast microphones. Keep both hosts' faces, clothing, hair, and the studio layout consistent across all shots.\\n\\nShot 1, 0.0-3.5 seconds: Medium close-up of a confident Black woman with long straight black hair, black rectangular glasses, a fitted white top, and blue jeans, seated naturally beside the pink microphone. She gestures casually and says <d>[English] Have you tried that late-night taco place everyone keeps posting?</d>\\n\\nShot 2, 3.5-6.5 seconds: Clean cinematic food B-roll, an overhead close-up of black-gloved hands plating two colorful street tacos on brown paper, warm tortillas, grilled filling, purple cabbage, cilantro, lime, and glossy red salsa. Visible steam and crisp, realistic food texture. The second host begins speaking off camera: <d>[English] Yes. Fresh tortillas, incredible flavor, and honestly much better than I expected.</d>\\n\\nShot 3, 6.5-10.0 seconds: Cut back to the same podcast studio, medium close-up of the second host, a light-skinned brunette woman with shoulder-length wavy hair wearing a charcoal ribbed top, seated in the opposite beige chair. She finishes the sentence with natural conversational timing while the first host listens just off camera.\\n\\nRealistic skin, restrained hand gestures, accurate anatomy, stable microphones, natural blinking and lip synchronization, native-looking UGC pacing. Do not render subtitles, logos, watermarks, signs, or on-screen text.\\n\\noverall_soundscape: Clean close-mic podcast dialogue with two distinct natural female voices, subtle quiet studio room tone, and a brief soft tortilla sizzle and plating sound during the taco B-roll. Dialogue stays continuous across the visual cut and remains easy to understand.\\n\\nnon_diegetic_music: None.\", \"width\": 736, \"height\": 1280, \"length\": 243}}, \"adapter\": {\"class_type\": \"LoraLoaderModelOnly\", \"inputs\": {\"model\": [\"diffusion\", 0], \"lora_name\": \"taomate_h3_3step_comfy.safetensors\", \"strength_model\": 1.0}}, \"sigma_shift\": {\"class_type\": \"MiniMaxH3SigmaShift\", \"inputs\": {\"model\": [\"adapter\", 0], \"shift_video\": 12.0, \"shift_audio\": 3.0}}, \"attention\": {\"class_type\": \"BenchmarkSage\", \"inputs\": {\"model\": [\"sigma_shift\", 0]}}, \"noise\": {\"class_type\": \"RandomNoise\", \"inputs\": {\"noise_seed\": 42}}, \"guider\": {\"class_type\": \"BasicGuider\", \"inputs\": {\"model\": [\"attention\", 0], \"conditioning\": [\"conditioning\", 0]}}, \"sampler\": {\"class_type\": \"KSamplerSelect\", \"inputs\": {\"sampler_name\": \"euler\"}}, \"schedule\": {\"class_type\": \"BasicScheduler\", \"inputs\": {\"model\": [\"attention\", 0], \"scheduler\": \"simple\", \"steps\": 3, \"denoise\": 1.0}}, \"denoise\": {\"class_type\": \"SamplerCustomAdvanced\", \"inputs\": {\"noise\": [\"noise\", 0], \"guider\": [\"guider\", 0], \"sampler\": [\"sampler\", 0], \"sigmas\": [\"schedule\", 0], \"latent_image\": [\"conditioning\", 1]}}, \"video_decode\": {\"class_type\": \"VAEDecode\", \"inputs\": {\"samples\": [\"denoise\", 0], \"vae\": [\"video_vae\", 0]}}, \"audio_decode\": {\"class_type\": \"VAEDecodeAudio\", \"inputs\": {\"samples\": [\"denoise\", 0], \"vae\": [\"audio_vae\", 0]}}, \"video\": {\"class_type\": \"CreateVideo\", \"inputs\": {\"images\": [\"video_decode\", 0], \"audio\": [\"audio_decode\", 0], \"fps\": 24.0, \"bit_depth\": 8}}, \"save\": {\"class_type\": \"SaveVideo\", \"inputs\": {\"video\": [\"video\", 0], \"filename_prefix\": \"warmup/podcast\", \"format\": \"mp4\", \"codec\": \"auto\"}}}",
+            "encoder": "Lavf62.12.102"
+          }
+        }
+      }
+    },
+    {
+      "phase": "measured_1",
+      "generation_seconds": 88.6866183760576,
+      "components_seconds": {
+        "node/VAELoader": 0.4313745517283678,
+        "node/CLIPLoader": 0.3445037549827248,
+        "text_tokenization": 0.0013580240774899721,
+        "text_encoder": 4.467908394988626,
+        "node/MiniMaxH3ImageToVideo": 4.470770539017394,
+        "node/UNETLoader": 0.03459641104564071,
+        "node/LoraLoaderModelOnly": 0.017802217975258827,
+        "node/MiniMaxH3SigmaShift": 0.00021759001538157463,
+        "node/BenchmarkSage": 3.81919089704752e-05,
+        "node/BasicScheduler": 6.675603799521923e-05,
+        "node/KSamplerSelect": 1.1631986126303673e-05,
+        "node/BasicGuider": 1.843506470322609e-05,
+        "node/RandomNoise": 6.211921572685242e-06,
+        "denoising_loop": 52.87770120007917,
+        "node/SamplerCustomAdvanced": 53.46821543900296,
+        "node/VAEDecodeAudio": 0.20150091405957937,
+        "node/VAEDecode": 25.3070608319249,
+        "node/CreateVideo": 2.6408815756440163e-05,
+        "node/SaveVideo": 3.174692306900397
+      },
+      "calls": [
+        {
+          "component": "node/VAELoader",
+          "seconds": 0.3762158998288214
+        },
+        {
+          "component": "node/VAELoader",
+          "seconds": 0.055158651899546385
+        },
+        {
+          "component": "node/CLIPLoader",
+          "seconds": 0.3445037549827248
+        },
+        {
+          "component": "text_tokenization",
+          "seconds": 0.0013580240774899721
+        },
+        {
+          "component": "text_encoder",
+          "seconds": 4.467908394988626
+        },
+        {
+          "component": "node/MiniMaxH3ImageToVideo",
+          "seconds": 4.470770539017394
+        },
+        {
+          "component": "node/UNETLoader",
+          "seconds": 0.03459641104564071
+        },
+        {
+          "component": "node/LoraLoaderModelOnly",
+          "seconds": 0.017802217975258827
+        },
+        {
+          "component": "node/MiniMaxH3SigmaShift",
+          "seconds": 0.00021759001538157463
+        },
+        {
+          "component": "node/BenchmarkSage",
+          "seconds": 3.81919089704752e-05
+        },
+        {
+          "component": "node/BasicScheduler",
+          "seconds": 6.675603799521923e-05
+        },
+        {
+          "component": "node/KSamplerSelect",
+          "seconds": 1.1631986126303673e-05
+        },
+        {
+          "component": "node/BasicGuider",
+          "seconds": 1.843506470322609e-05
+        },
+        {
+          "component": "node/RandomNoise",
+          "seconds": 6.211921572685242e-06
+        },
+        {
+          "component": "denoising_loop",
+          "seconds": 52.87770120007917
+        },
+        {
+          "component": "node/SamplerCustomAdvanced",
+          "seconds": 53.46821543900296
+        },
+        {
+          "component": "node/VAEDecodeAudio",
+          "seconds": 0.20150091405957937
+        },
+        {
+          "component": "node/VAEDecode",
+          "seconds": 25.3070608319249
+        },
+        {
+          "component": "node/CreateVideo",
+          "seconds": 2.6408815756440163e-05
+        },
+        {
+          "component": "node/SaveVideo",
+          "seconds": 3.174692306900397
+        }
+      ],
+      "forward_counts": {
+        "transformer_forwards": 3,
+        "sage_dispatches": 150,
+        "sage_attempts": 150,
+        "sage_qk_int8_pv_fp8_cuda_completed": 150,
+        "sage_completed": 150
+      },
+      "peak_allocated_gib": 9.163675785064697,
+      "peak_reserved_gib": 13.720703125,
+      "sampled_peak_device_memory_mib": 31856,
+      "video": "/home/raqeeb/code/h3-optimization/taomate-lora/runs/base-h3-taomate-3step-seed42/runtime/output/measured_1/podcast_00001_.mp4",
+      "ffprobe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 736,
+            "height": 1280,
+            "coded_width": 736,
+            "coded_height": 1280,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 32,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "iec61966-2-1",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 124416,
+            "duration": "10.125000",
+            "bit_rate": "2454502",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "243",
+            "extradata_size": 48,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "32000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/32000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 324000,
+            "duration": "10.125000",
+            "bit_rate": "135532",
+            "nb_frames": "318",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/home/raqeeb/code/h3-optimization/taomate-lora/runs/base-h3-taomate-3step-seed42/runtime/output/measured_1/podcast_00001_.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "10.125000",
+          "size": "3292083",
+          "bit_rate": "2601152",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "prompt": "{\"diffusion\": {\"class_type\": \"UNETLoader\", \"inputs\": {\"unet_name\": \"minimax_h3_fl2va_int8_convrot.safetensors\", \"weight_dtype\": \"default\"}}, \"text\": {\"class_type\": \"CLIPLoader\", \"inputs\": {\"clip_name\": \"qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\", \"type\": \"minimax\", \"device\": \"default\"}}, \"video_vae\": {\"class_type\": \"VAELoader\", \"inputs\": {\"vae_name\": \"minimax_h3_video_vae_fp16.safetensors\"}}, \"audio_vae\": {\"class_type\": \"VAELoader\", \"inputs\": {\"vae_name\": \"minimax_h3_audio_vae_fp32.safetensors\"}}, \"conditioning\": {\"class_type\": \"MiniMaxH3ImageToVideo\", \"inputs\": {\"clip\": [\"text\", 0], \"vae\": [\"video_vae\", 0], \"prompt\": \"integrated_multimodal_description: A polished vertical social-media podcast advertisement in a warm modern studio with wooden shelves, soft amber practical lights, two beige lounge chairs, and bright pink broadcast microphones. Keep both hosts' faces, clothing, hair, and the studio layout consistent across all shots.\\n\\nShot 1, 0.0-3.5 seconds: Medium close-up of a confident Black woman with long straight black hair, black rectangular glasses, a fitted white top, and blue jeans, seated naturally beside the pink microphone. She gestures casually and says <d>[English] Have you tried that late-night taco place everyone keeps posting?</d>\\n\\nShot 2, 3.5-6.5 seconds: Clean cinematic food B-roll, an overhead close-up of black-gloved hands plating two colorful street tacos on brown paper, warm tortillas, grilled filling, purple cabbage, cilantro, lime, and glossy red salsa. Visible steam and crisp, realistic food texture. The second host begins speaking off camera: <d>[English] Yes. Fresh tortillas, incredible flavor, and honestly much better than I expected.</d>\\n\\nShot 3, 6.5-10.0 seconds: Cut back to the same podcast studio, medium close-up of the second host, a light-skinned brunette woman with shoulder-length wavy hair wearing a charcoal ribbed top, seated in the opposite beige chair. She finishes the sentence with natural conversational timing while the first host listens just off camera.\\n\\nRealistic skin, restrained hand gestures, accurate anatomy, stable microphones, natural blinking and lip synchronization, native-looking UGC pacing. Do not render subtitles, logos, watermarks, signs, or on-screen text.\\n\\noverall_soundscape: Clean close-mic podcast dialogue with two distinct natural female voices, subtle quiet studio room tone, and a brief soft tortilla sizzle and plating sound during the taco B-roll. Dialogue stays continuous across the visual cut and remains easy to understand.\\n\\nnon_diegetic_music: None.\", \"width\": 736, \"height\": 1280, \"length\": 243}}, \"adapter\": {\"class_type\": \"LoraLoaderModelOnly\", \"inputs\": {\"model\": [\"diffusion\", 0], \"lora_name\": \"taomate_h3_3step_comfy.safetensors\", \"strength_model\": 1.0}}, \"sigma_shift\": {\"class_type\": \"MiniMaxH3SigmaShift\", \"inputs\": {\"model\": [\"adapter\", 0], \"shift_video\": 12.0, \"shift_audio\": 3.0}}, \"attention\": {\"class_type\": \"BenchmarkSage\", \"inputs\": {\"model\": [\"sigma_shift\", 0]}}, \"noise\": {\"class_type\": \"RandomNoise\", \"inputs\": {\"noise_seed\": 42}}, \"guider\": {\"class_type\": \"BasicGuider\", \"inputs\": {\"model\": [\"attention\", 0], \"conditioning\": [\"conditioning\", 0]}}, \"sampler\": {\"class_type\": \"KSamplerSelect\", \"inputs\": {\"sampler_name\": \"euler\"}}, \"schedule\": {\"class_type\": \"BasicScheduler\", \"inputs\": {\"model\": [\"attention\", 0], \"scheduler\": \"simple\", \"steps\": 3, \"denoise\": 1.0}}, \"denoise\": {\"class_type\": \"SamplerCustomAdvanced\", \"inputs\": {\"noise\": [\"noise\", 0], \"guider\": [\"guider\", 0], \"sampler\": [\"sampler\", 0], \"sigmas\": [\"schedule\", 0], \"latent_image\": [\"conditioning\", 1]}}, \"video_decode\": {\"class_type\": \"VAEDecode\", \"inputs\": {\"samples\": [\"denoise\", 0], \"vae\": [\"video_vae\", 0]}}, \"audio_decode\": {\"class_type\": \"VAEDecodeAudio\", \"inputs\": {\"samples\": [\"denoise\", 0], \"vae\": [\"audio_vae\", 0]}}, \"video\": {\"class_type\": \"CreateVideo\", \"inputs\": {\"images\": [\"video_decode\", 0], \"audio\": [\"audio_decode\", 0], \"fps\": 24.0, \"bit_depth\": 8}}, \"save\": {\"class_type\": \"SaveVideo\", \"inputs\": {\"video\": [\"video\", 0], \"filename_prefix\": \"measured_1/podcast\", \"format\": \"mp4\", \"codec\": \"auto\"}}}",
+            "encoder": "Lavf62.12.102"
+          }
+        }
+      }
+    }
+  ],
+  "seed": 42,
+  "width": 736,
+  "height": 1280,
+  "frames": 243,
+  "fps": 24,
+  "duration_seconds": 10.125,
+  "steps": 3,
+  "strength": 1.0,
+  "base_model": "MiniMax H3 FL2VA full INT8 ConvRot (non-pruned)",
+  "text_encoder": "Qwen3-VL 32B NVFP4-AWQ",
+  "adapter": "Robert1212star/TaoMate-H3-3Step-ComfyUI",
+  "attention": "SageAttention 2.2.0 QK INT8 / PV FP8 CUDA for diffusion; PyTorch elsewhere",
+  "sampler": "Euler",
+  "scheduler": "simple",
+  "sigma_shift_video": 12.0,
+  "sigma_shift_audio": 3.0,
+  "optimizations_enabled": [
+    "INT8 ConvRot diffusion checkpoint",
+    "NVFP4-AWQ text encoder",
+    "SageAttention 2.2.0",
+    "dynamic VRAM offloading"
+  ],
+  "optimizations_excluded": [
+    "Larryvrh MiniMaxH3TurboSampler",
+    "VSA",
+    "Spectrum",
+    "EasyCache",
+    "graph compilation"
+  ],
+  "memory_management": "Dynamic CPU/GPU weight offloading",
+  "comfy_commit": "10febb01d7be73d1491cf5e5347b5ab8b6c2c09e",
+  "runner_sha256": "ddd5137032bb26a9b049f75741175ec6f0a42e44744dfab0082f35b7b5aba8ae",
+  "prompt_sha256": "3a652ed6b7fdf389ac5f328d3414c6a797d4c50bfb98232f3e6a41a3535f56e8",
+  "artifact_sha256": {
+    "minimax_h3_fl2va_int8_convrot.safetensors": "7ad4c73e6e378b822ffd1629f27f632d3787d95f5e468e3af958f98c58df96a5",
+    "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors": "35a88d51044231fe332301d7a62aa81e3f2cba62febeb446e2c1e3e0ef76f2c6",
+    "taomate_h3_3step_comfy.safetensors": "c1c057121a5ebf77d708b8a5c331ebb78416b90775df465c02a4fa48688315cb"
+  },
+  "timing_method": "One complete warm-up followed by one measured run in the same process. CUDA synchronized at full-generation and component boundaries. Full time includes prompt encoding, denoising, decoding, and MP4 saving; initialization is excluded.",
+  "files": {
+    "diffusion": {
+      "path": "/home/raqeeb/code/h3-optimization/fast-h3-aishwarya/models/diffusion_models/minimax_h3_fl2va_int8_convrot.safetensors",
+      "bytes": 34038892334
+    },
+    "text": {
+      "path": "/home/raqeeb/code/script2video/cache/minimax_h3/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "bytes": 15687142551
+    },
+    "video_vae": {
+      "path": "/home/raqeeb/code/script2video/cache/minimax_h3/vae/minimax_h3_video_vae_fp16.safetensors",
+      "bytes": 5207808496
+    },
+    "audio_vae": {
+      "path": "/home/raqeeb/code/script2video/cache/minimax_h3/vae/minimax_h3_audio_vae_fp32.safetensors",
+      "bytes": 605254808
+    },
+    "lora": {
+      "path": "/home/raqeeb/code/h3-optimization/taomate-lora/models/loras/taomate_h3_3step_comfy.safetensors",
+      "bytes": 2481007456
+    }
+  },
+  "hardware": "name, uuid, driver_version, memory.total [MiB]\nNVIDIA GeForce RTX 5090, GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 595.84, 32607 MiB\n",
+  "python": "3.12.13 (main, Jun 23 2026, 15:18:55) [Clang 22.1.3 ]",
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "sageattention_version": "2.2.0",
+  "gpu_compute_capability": [
+    12,
+    0
+  ],
+  "attention_scope": "diffusion model only; text encoder and VAEs use PyTorch attention",
+  "initialization_seconds": 1.7010248899459839,
+  "dynamic_vram": true
+}

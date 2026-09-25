@@ -1,0 +1,207 @@
+{
+  "source_directory": "/home/raqeeb/code/h3-optimization/taomate-lora",
+  "source_git_revision": null,
+  "scope": "The requested 185.15s BF16 and approximately 88.53s archived Turbo-sampler configurations, plus the later 88.69s Euler comparison.",
+  "files": [
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/measured-preview.jpg",
+      "bytes": 50543,
+      "sha256": "06c5787527f9179fd7ff74e2e34fbb8a2fba713d6e39ee13f1741f98bd958841"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/warmup_gpu_samples.json",
+      "bytes": 8715,
+      "sha256": "566fdd25a396a355f8366be7d07d7d42604a7eec2fe254402bc27b3e0e66163c"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/prompt.txt",
+      "bytes": 1933,
+      "sha256": "3d3077f76c422a2593e079f5f7b1df8c69395b4496069328a9761eaecc223ba7"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/measured_1_workflow.json",
+      "bytes": 5072,
+      "sha256": "b3fea7be6ff4a3c9a8d544fcc8529acb20b9aab16895be5521ea0a3b02845a01"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/warmup_workflow.json",
+      "bytes": 5068,
+      "sha256": "1a049874d3537420e1f30dc93df5417198f3a3d14b6be9fb3b764d3d0595c74f"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/runner.py",
+      "bytes": 14426,
+      "sha256": "3cc369b734828b24c75d4151df403dd2fbabba735881c48d8d257655922b20da"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/report.json",
+      "bytes": 27249,
+      "sha256": "25787653ee661dad504ef6aa77d71b2920e62ce675fe09bfc65f8373de76490b"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/measured_1_gpu_samples.json",
+      "bytes": 8872,
+      "sha256": "1e0c965fd94c382c4e9a054d01c6e16dbdd1fe68359e04296e74ab3bd460fc5c"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/index.html",
+      "bytes": 11356,
+      "sha256": "e0cd7ae9197164aa1096fffce588548c6555ea58db927a92ba9b6d8b3728d5f6"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/workflow.json",
+      "bytes": 5068,
+      "sha256": "1a049874d3537420e1f30dc93df5417198f3a3d14b6be9fb3b764d3d0595c74f"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/runtime/output/warmup/podcast_00001_.mp4",
+      "bytes": 3271994,
+      "sha256": "6472a917d95b953a7b60df4a8e077a93942e063ede2dc64876c595e90cf29a9b"
+    },
+    {
+      "path": "runs/base-h3-bf16-taomate-3step-seed42-v2/runtime/output/measured_1/podcast_00001_.mp4",
+      "bytes": 3271930,
+      "sha256": "bbc26080c6bd614b8297e9912efbe703891efd8827ccb98a4d3feeffe1d2746c"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/measured-preview.jpg",
+      "bytes": 51119,
+      "sha256": "d63312a572a270ef8d810382158ec8aaec5b1ec6e2cc81e11c12d5f3f4b5a063"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/warmup_gpu_samples.json",
+      "bytes": 8119,
+      "sha256": "3fd1a95ef041d070cd9d00fc58ecbaf58482881ce2230756eaf5e816f8a82cd5"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/prompt.txt",
+      "bytes": 1933,
+      "sha256": "3d3077f76c422a2593e079f5f7b1df8c69395b4496069328a9761eaecc223ba7"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/measured_1_workflow.json",
+      "bytes": 4992,
+      "sha256": "3684cb67ca56cdd7144258f088d479d39f9fee621fdaf6d09ef1d838a80e517f"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/warmup_workflow.json",
+      "bytes": 4988,
+      "sha256": "837926b1551b79b0490d9c5eea2dc3f48da404b0e89c0362138bb0feeb41381e"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/report.json",
+      "bytes": 35104,
+      "sha256": "307e7e9f6ac5ca6e7f937d1cd7f2f4f376a338b00d9767bb09d195f62825680e"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/benchmark.py",
+      "bytes": 20288,
+      "sha256": "69da2b6d0f392fb0f402f7a602ee805be633e2e8db2e39ece89f85eb42311a62"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/measured_1_gpu_samples.json",
+      "bytes": 8221,
+      "sha256": "b7887e7894618b84257c1fb5f4615838dc847cc0b43c2ce43909804eef7b8794"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/index.html",
+      "bytes": 10991,
+      "sha256": "5e864a2e6e1b4325dc4f5f6477d78db7199d1046820ba796e519ee7f974a9612"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/workflow.json",
+      "bytes": 4988,
+      "sha256": "837926b1551b79b0490d9c5eea2dc3f48da404b0e89c0362138bb0feeb41381e"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/runtime/output/warmup/podcast_00001_.mp4",
+      "bytes": 3288494,
+      "sha256": "e06b4590b2c7b561818b4da7a4534da5c1e3aee67420e46cc535e965392dc7ac"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42-larry-sampler-archive/runtime/output/measured_1/podcast_00001_.mp4",
+      "bytes": 3288116,
+      "sha256": "eb865a18359c2ce9bbeebf54a066c261a1554b9bc314714a5e6a6a485b70d2d9"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/measured-preview.jpg",
+      "bytes": 114869,
+      "sha256": "3b6e6109becdd71b6b9cdb7aa1356f239a16afc29547cf7f893771d38eaa9e2b"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/warmup_gpu_samples.json",
+      "bytes": 4136,
+      "sha256": "f9d6178f4c5eb55f35612ff8f00df1bb1858fbb39d3a57994a902f87471083ad"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/prompt.txt",
+      "bytes": 1933,
+      "sha256": "3d3077f76c422a2593e079f5f7b1df8c69395b4496069328a9761eaecc223ba7"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/measured_1_workflow.json",
+      "bytes": 5218,
+      "sha256": "f1a222df216063906a010037227abf74e809497b0ec27ce55baa6c2b60ef9fd9"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/warmup_workflow.json",
+      "bytes": 5214,
+      "sha256": "a52add89d6e5bd22bdbd2ca58950a415b898139d8f93acca6e6a80027ecc1eb5"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/warmup.mp4",
+      "bytes": 3292273,
+      "sha256": "1d87f60fc5cedfe1c3f556c3cca781b8c912b776cfc25d29f9c85374f0f0e7d4"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/runner.py",
+      "bytes": 19955,
+      "sha256": "ddd5137032bb26a9b049f75741175ec6f0a42e44744dfab0082f35b7b5aba8ae"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/report.json",
+      "bytes": 28355,
+      "sha256": "71cd0b8745617684832bb15755fbf45f01da37bfcc1f2b4c2758b59f823b838c"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/benchmark.py",
+      "bytes": 19955,
+      "sha256": "ddd5137032bb26a9b049f75741175ec6f0a42e44744dfab0082f35b7b5aba8ae"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/measured_1_gpu_samples.json",
+      "bytes": 4237,
+      "sha256": "124d9fe42dede08864cd19814acbc9d6f4c7b5256f657cb92c69f1994089a985"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/index.html",
+      "bytes": 11764,
+      "sha256": "4a9f0920fdd8cf38d4e0b9ff9ca34ea3e1ef840e531e7f0ae8031aee319ad0dd"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/workflow.json",
+      "bytes": 5214,
+      "sha256": "a52add89d6e5bd22bdbd2ca58950a415b898139d8f93acca6e6a80027ecc1eb5"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/runtime/output/warmup/podcast_00001_.mp4",
+      "bytes": 3292273,
+      "sha256": "1d87f60fc5cedfe1c3f556c3cca781b8c912b776cfc25d29f9c85374f0f0e7d4"
+    },
+    {
+      "path": "runs/base-h3-taomate-3step-seed42/runtime/output/measured_1/podcast_00001_.mp4",
+      "bytes": 3292083,
+      "sha256": "a17de70bf884b2a36f106dae2f63c0662b3111d313d528cae4d01ac66d1fe116"
+    },
+    {
+      "path": "run_taomate.py",
+      "bytes": 4063,
+      "sha256": "0146aa6a52bae3b1d0cff468b3d969d0903914c0144cf077e381b268ff80cee4"
+    }
+  ],
+  "excluded": [
+    "Model weights and weight symlinks: documented in MODEL_REFERENCES.md.",
+    "Unrelated Ref2VA, 24-second, 60-second, and Nsight experiments elsewhere in the workspace.",
+    "Disposable __pycache__, download caches, empty runtime temporary directories, and local application metadata."
+  ]
+}
