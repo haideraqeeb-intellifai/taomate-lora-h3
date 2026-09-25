@@ -27,3 +27,7 @@ Validation before push:
 - Model revisions, file sizes, and SHA-256 values were checked against public Hugging Face metadata. No weights were downloaded or uploaded during publication.
 - The authenticated GitHub API account was verified as `haideraqeeb-intellifai`, and the requested repository name was unused.
 - GPU inference was not rerun for publication; the committed measurements are the historical observations, not new performance claims.
+
+## 2026-09-25 21:42:41 UTC — Add experiment date
+
+Added **16 September 2026** to the README and all three HTML reports. Verified that every measured GPU telemetry sample in each run records `2026/09/16`. This is the experiment date; publication occurred on 25 September 2026. Original JSON measurements, runner snapshots, and videos remain unchanged. The telemetry does not encode a timezone, so no time-of-day or timezone claim was added.

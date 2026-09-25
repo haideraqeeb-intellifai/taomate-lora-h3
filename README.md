@@ -2,6 +2,8 @@
 
 Code, workflows, prompts, measurements, and generated video/audio for the **185.15s BF16** and **approximately 88.53s optimized** TaoMate H3 configurations on an NVIDIA RTX 5090.
 
+**Experiment date: 16 September 2026** for all three configurations, verified from the saved `measured_1_gpu_samples.json` timestamps.
+
 | Launcher profile | Base / text encoder | Diffusion attention | Sampler | Measured generation |
 | --- | --- | --- | --- | ---: |
 | `bf16` | Full BF16 / BF16 | PyTorch SDPA | Euler, native sigma shifts | 185.145862s |
